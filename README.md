@@ -5,21 +5,22 @@
 [![GitHub license](https://img.shields.io/github/license/gonejack/gwriter.svg?color=blue)](LICENSE.md)
 
 ```go
+func ExampleNewWriter() {
 	conf := config.Config{
 		PathTpl:  "{dir}/{filename}{base_ext}{write_ext}",
 		BaseExt:  ".msg",
 		WriteExt: "",
 		PathInfo: map[string]string{
-			"{dir}":      ".",
-			"{filename}": "testFile",
+			"{dir}":      os.Getenv("DIR"),
+			"{filename}": os.Getenv("FILENAME"),
 		},
 		UpdateMoment: "00:01:00",
 	}
 
-	writer := NewWriter("writerTest", conf)
-
+	writer := NewWriter("test-file", conf)
 	writer.Start()
 	writer.WriteString("this is string")
 	writer.WriteBytes([]byte("this is bytes"))
 	writer.Stop()
+}
 ```
