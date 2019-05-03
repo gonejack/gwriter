@@ -29,6 +29,7 @@ func TestNewWriter(t *testing.T) {
 	time.Sleep(time.Second)
 }
 
+// example of creating new writer
 func ExampleNewWriter() {
 	conf := config.Config{
 		PathTpl:  "{dir}/{filename}{base_ext}{write_ext}",
