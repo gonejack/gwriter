@@ -1,7 +1,8 @@
-# Logger module for go
+# Go module for appending files
 
 [![Build Status](https://travis-ci.org/gonejack/gwriter.svg?branch=master)](https://travis-ci.org/gonejack/gwriter)
 [![GoDoc](https://godoc.org/github.com/gonejack/gwriter?status.svg)](https://godoc.org/github.com/gonejack/gwriter)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gonejack/gwriter)](https://goreportcard.com/report/github.com/gonejack/gwriter)
 [![GitHub license](https://img.shields.io/github/license/gonejack/gwriter.svg?color=blue)](LICENSE.md)
 
 ```go

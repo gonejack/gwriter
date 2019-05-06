@@ -1,5 +1,5 @@
 /*
-Package writer is an file library for appending file.
+Package gwriter is an file library for appending file.
 */
 package gwriter
 

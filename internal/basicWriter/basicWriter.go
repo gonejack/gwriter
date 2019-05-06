@@ -243,6 +243,7 @@ func (w *writer) calSleepSec() (sec int) {
 	return
 }
 
+// New create an instance of basic Writer
 func New(name string, config config.Config) (w *writer) {
 	w = &writer{
 		logger: glogger.NewLogger(name),
